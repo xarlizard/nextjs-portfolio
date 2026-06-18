@@ -63,11 +63,14 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Charlie.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">6 years</span> of experience. I enjoy
-        building <span className="italic">websites & SPA's</span>. My focus is{" "}
-        <span className="underline">React (Next.js/Vite/Astro)</span>.
+        <span className="font-bold">Hello, I'm Charlie Rios.</span> I'm a{" "}
+        <span className="font-bold">Senior Full-Stack Software Engineer</span>{" "}
+        based in <span className="font-bold">Amsterdam</span>. I build products{" "}
+        <span className="italic">end-to-end</span> — from UI architecture to
+        APIs, infra, and production. My focus is{" "}
+        <span className="underline">React/TypeScript</span>,{" "}
+        <span className="underline">AI-native tooling</span>, and{" "}
+        <span className="underline">full-stack ownership</span>.
       </motion.h1>
 
       <motion.div

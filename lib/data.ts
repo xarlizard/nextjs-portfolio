@@ -1,10 +1,19 @@
-import { url } from "inspector";
 import React from "react";
 import { FaReact, FaNodeJs, FaCloud } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
-export const circleImg = "/images/circleImg.png";
-export const codeticketsImg = "/images/codeticketsImg.png";
-export const tldrawImg = "/images/tldrawImg.png";
+
+export const tokenBarImg =
+  "https://raw.githubusercontent.com/token-bar/token-bar/main/.github/icon-cropped.png";
+export const tokenBarScreenshot =
+  "https://raw.githubusercontent.com/token-bar/token-bar/main/.github/screenshot.png";
+export const emailSignatureEditorImg =
+  "https://raw.githubusercontent.com/xarlizard/email-signature-editor/main/.github/icon-cropped.png";
+export const emailSignatureEditorScreenshot =
+  "https://raw.githubusercontent.com/xarlizard/email-signature-editor/main/.github/screenshot.png";
+export const carbnbImg =
+  "https://raw.githubusercontent.com/xarlizard/carbnb-v0/main/.github/icon-cropped.png";
+export const carbnbScreenshot =
+  "https://raw.githubusercontent.com/xarlizard/carbnb-v0/main/.github/screenshot.png";
 
 export const links = [
   {
@@ -87,28 +96,40 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Codetickets",
+    title: "Token Bar",
     description:
-      "Ticketing Saas as vendor portal dashboard/retail for some public and private institutions, managing and serving their event tickets.",
-    tags: ["React", "Node.js", "Cloudflare R2 Database", "Bootstrap", "AWS"],
-    imageUrl: codeticketsImg,
-    url: "https://codetickets2.pages.dev/portal/zumzeigcooperativa",
+      "Native macOS menu bar app that unifies AI usage across Cursor, OpenAI, Anthropic, and more — track tokens, credits, spend, and burn rate without juggling provider dashboards.",
+    tags: ["Swift", "macOS"],
+    imageUrl: tokenBarImg,
+    screenshotUrl: tokenBarScreenshot,
+    url: "https://token-bar.pages.dev/",
+    githubUrl: "https://github.com/token-bar/token-bar",
+    accent: "from-amber-400/30 via-orange-500/20 to-rose-400/20",
+    glow: "group-hover:shadow-amber-500/20",
   },
   {
-    title: "TLDRAW with Nextjs",
+    title: "Email Signature Editor",
     description:
-      "Tldraw editor made with React and shadcdn, integrating AI with OpenAI API to generate custom SVG forms.",
-    tags: ["tRPC", "React", "TypeScript", "Next.js", "Tailwind", "Shadcdn"],
-    imageUrl: tldrawImg,
-    url: "https://vidext.netlify.app/",
+      "Schema-driven email signature builder with live HTML preview and one-click copy into Gmail. Import from LinkedIn, customize in a visual editor, and manage a saved signature library.",
+    tags: ["React", "Vite", "Tailwind CSS", "shadcn/ui"],
+    imageUrl: emailSignatureEditorImg,
+    screenshotUrl: emailSignatureEditorScreenshot,
+    url: "https://email-signature-editor.pages.dev/",
+    githubUrl: "https://github.com/xarlizard/email-signature-editor",
+    accent: "from-violet-400/30 via-indigo-500/20 to-sky-400/20",
+    glow: "group-hover:shadow-violet-500/20",
   },
   {
-    title: "Circle",
+    title: "CarBnB",
     description:
-      "A simple project landing page featuring a modern UI layout, responsive and designed for Ironhack's Bootcamp.",
-    tags: ["React", "CSS Modules", "ReactRouter", "Bootstrap", "Axios"],
-    imageUrl: circleImg,
-    url: "https://ironhack-charlie-final-project-1.pages.dev/",
+      "Peer-to-peer car rental marketplace inspired by Airbnb. Two proof-of-concept frontends built with Lovable and Vercel v0 to compare AI-assisted UI generation workflows.",
+    tags: ["Next.js", "React", "Vercel", "Netlify"],
+    imageUrl: carbnbImg,
+    screenshotUrl: carbnbScreenshot,
+    url: "https://carbnb.netlify.app/",
+    githubUrl: "https://github.com/xarlizard/carbnb-v0",
+    accent: "from-emerald-400/30 via-teal-500/20 to-cyan-400/20",
+    glow: "group-hover:shadow-emerald-500/20",
   },
 ] as const;
 

@@ -19,20 +19,21 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        A seasoned{" "}
-        <span className="font-medium">Senior React Fullstack Developer</span>{" "}
-        with a strong frontend focus and comprehensive backend capabilities.
-        Extensive experience in building sophisticated web applications using
-        the React ecosystem, including proficiency in{" "}
-        <span className="font-medium">React 19.0</span>,{" "}
-        <span className="font-medium">React Router v7</span>, and modern build
-        tools like <span className="font-medium">Nextjs/Vite/Astro</span>.
-        Expertise in developing and consuming{" "}
-        <span className="font-medium">RESTful APIs</span> and implementing{" "}
-        <span className="font-medium">Server-Side Rendering (SSR)</span> for
-        enhanced performance and SEO. Proven ability to collaborate effectively
-        within cross-functional teams (agile), apply modern web development
-        practices, and ensure adherence to accessibility guidelines.
+        I build products end-to-end: from{" "}
+        <span className="font-medium">UI architecture and design systems</span>{" "}
+        to <span className="font-medium">APIs, infra, and production deployments</span>.
+        I've led frontend teams as{" "}
+        <span className="font-medium">Frontend Lead</span>, owned features as a{" "}
+        <span className="font-medium">Product Engineer</span>, and shipped across{" "}
+        <span className="font-medium">web, mobile, and cloud</span>. Nowadays I'm
+        growing into a{" "}
+        <span className="font-medium">native AI developer</span>, building
+        intelligent systems that reach real users.
+      </p>
+      <p>
+        <span className="italic">What I bring:</span> strong product sense ·
+        scalable React/TypeScript frontends · full-stack ownership · AI-native
+        tooling
       </p>
     </motion.section>
   );
