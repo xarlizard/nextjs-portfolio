@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <motion.section
       id="contact"
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] scroll-mt-28 text-center"
+      className="w-[min(100%,38rem)] scroll-mt-28 text-center"
       initial={{
         opacity: 0,
       }}

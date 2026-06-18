@@ -32,7 +32,7 @@ export default function Projects() {
   }, [cycleEnabled, hoveredIndex]);
 
   return (
-    <section id="projects" className="mb-28 w-full max-w-[65rem] scroll-mt-28 sm:mb-40">
+    <section id="projects" className="w-full max-w-[65rem] scroll-mt-28">
       <SectionHeading>Featured projects</SectionHeading>
 
       <motion.p
