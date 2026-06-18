@@ -1,6 +1,6 @@
 {
-  "buildCommand": "npm install --omit=optional && next build",
+  "buildCommand": "bun run build",
   "outputDirectory": ".next",
-  "installCommand": "npm install --omit=optional",
+  "installCommand": "bun install",
   "framework": "nextjs"
 } 

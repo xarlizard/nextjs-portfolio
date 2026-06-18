@@ -48,21 +48,28 @@ export default function Project({
           </ul>
         </div>
 
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-4 sm:top-1/2 sm:-translate-y-1/2 sm:right-4 sm:max-w-[18rem] sm:max-h-[14rem] sm:min-h-full object-contain rounded-lg shadow-2xl
-            transition 
-            group-hover:scale-[2] /* Extreme zoom effect */
-            group-hover:rotate-1 /* Slight tilt effect */
-            group-hover:translate-x-4 /* Move image to the right on hover */
-
-            group-even:sm:left-4 /* Position image on the left for even groups */
-            group-even:sm:right-[initial] /* Reset right positioning for even groups */
-            group-even:group-hover:translate-x-[-4rem] /* Move image to the left on hover for even groups */
+        <div
+          className="absolute hidden sm:block top-4 sm:top-1/2 sm:-translate-y-1/2 sm:right-4 sm:w-[18rem] sm:h-[14rem]
+            transition
+            group-hover:scale-[2]
+            group-hover:rotate-1
+            group-hover:translate-x-4
+            group-even:sm:left-4
+            group-even:sm:right-[initial]
+            group-even:group-hover:translate-x-[-4rem]
             group-even:group-hover:rotate-1"
-        />
+        >
+          <div className="relative w-full h-full">
+            <Image
+              src={imageUrl}
+              alt="Project I worked on"
+              fill
+              quality={95}
+              sizes="288px"
+              className="object-contain rounded-lg shadow-2xl"
+            />
+          </div>
+        </div>
       </section>
     </motion.div>
   );

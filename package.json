@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "packageManager": "bun@1.3.14",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,8 +15,8 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "clean": "rmdir /s /q .next && rmdir /s /q .open-next",
     "vercel-deploy": "vercel deploy --prod",
-    "vercel-install": "npm install --ignore-scripts",
-    "vercel-build": "npm uninstall @cloudflare/workerd-linux-64 @opennextjs/cloudflare && next build",
+    "vercel-install": "bun install --ignore-scripts",
+    "vercel-build": "bun remove @cloudflare/workerd-linux-64 @opennextjs/cloudflare && next build",
     "build:cloudflare": "opennextjs-cloudflare build"
   },
   "dependencies": {
