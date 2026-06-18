@@ -62,12 +62,9 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Charlie Rios.</span> I'm a{" "}
         <span className="font-bold">Senior Full-Stack Software Engineer</span>{" "}
-        based in <span className="font-bold">Amsterdam</span>. I build products{" "}
+        based in <span className="font-bold">Amsterdam</span>. <br /> I build products{" "}
         <span className="italic">end-to-end</span> — from UI architecture to
-        APIs, infra, and production. My focus is{" "}
-        <span className="underline">React/TypeScript</span>,{" "}
-        <span className="underline">AI-native tooling</span>, and{" "}
-        <span className="underline">full-stack ownership</span>.
+        APIs, infra, and production deployments.
       </motion.h1>
 
       <motion.div
