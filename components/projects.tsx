@@ -4,13 +4,11 @@ import { useEffect, useState } from "react";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
-import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
 const CYCLE_INTERVAL_MS = 4000;
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.35);
   const [activeIndex, setActiveIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [cycleEnabled, setCycleEnabled] = useState(true);
@@ -34,7 +32,7 @@ export default function Projects() {
   }, [cycleEnabled, hoveredIndex]);
 
   return (
-    <section ref={ref} id="projects" className="mb-28 w-full max-w-[65rem] scroll-mt-28 sm:mb-40">
+    <section id="projects" className="mb-28 w-full max-w-[65rem] scroll-mt-28 sm:mb-40">
       <SectionHeading>Featured projects</SectionHeading>
 
       <motion.p

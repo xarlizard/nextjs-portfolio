@@ -3,18 +3,15 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { experiencesData } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 import { FaBriefcase } from "react-icons/fa";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
   const { theme = "light" } = useTheme(); // Default to "light" theme during SSR
 
   return (
     <section
       id="experience"
-      ref={ref}
       className="scroll-mt-28 mb-28 sm:mb-40 flex flex-col items-center"
     >
       <SectionHeading>My Experience</SectionHeading>
