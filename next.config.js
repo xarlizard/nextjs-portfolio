@@ -4,6 +4,7 @@ import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 const nextConfig = {
   images: {
     unoptimized: true, // Disable Next.js image optimization
+    qualities: [75, 95],
     remotePatterns: [
       {
         protocol: "https",

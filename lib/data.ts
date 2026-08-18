@@ -6,14 +6,22 @@ export const tokenBarImg =
   "https://raw.githubusercontent.com/token-bar/token-bar/main/.github/icon-cropped.png";
 export const tokenBarScreenshot =
   "https://raw.githubusercontent.com/token-bar/token-bar/main/.github/screenshot.png";
+export const pocketAgentImg =
+  "https://raw.githubusercontent.com/pocket-agent/pocket-agent/main/.github/icon-cropped.png";
+export const pocketAgentScreenshot =
+  "https://raw.githubusercontent.com/pocket-agent/pocket-agent/main/.github/screenshot.png";
+export const dropafileImg =
+  "https://raw.githubusercontent.com/dropafile/dropafile/main/.github/icon-cropped.png";
+export const dropafileScreenshot =
+  "https://raw.githubusercontent.com/dropafile/dropafile/main/.github/screenshot.png";
 export const emailSignatureEditorImg =
   "https://raw.githubusercontent.com/xarlizard/email-signature-editor/main/.github/icon-cropped.png";
 export const emailSignatureEditorScreenshot =
   "https://raw.githubusercontent.com/xarlizard/email-signature-editor/main/.github/screenshot.png";
-export const carbnbImg =
-  "https://raw.githubusercontent.com/xarlizard/carbnb-v0/main/.github/icon-cropped.png";
-export const carbnbScreenshot =
-  "https://raw.githubusercontent.com/xarlizard/carbnb-v0/main/.github/screenshot.png";
+export const lizardUiImg =
+  "https://raw.githubusercontent.com/lizard-ui/lizard-ui/main/.github/icon-cropped.png";
+export const lizardUiScreenshot =
+  "https://raw.githubusercontent.com/lizard-ui/lizard-ui/main/.github/screenshot.png";
 
 export const links = [
   {
@@ -227,7 +235,7 @@ export const projectsData = [
   {
     title: "Token Bar",
     description:
-      "Native macOS menu bar app that unifies AI usage across Cursor, OpenAI, Anthropic, and more — track tokens, credits, spend, and burn rate without juggling provider dashboards.",
+      "Native macOS menu bar app that unifies AI usage across Cursor, OpenAI, Anthropic, and more — track tokens, credits, spend, and burn rate without juggling provider dashboards. Includes Notification Center widgets, usage alerts, and privacy-first credential storage in the Keychain.",
     tags: ["Swift", "macOS"],
     imageUrl: tokenBarImg,
     screenshotUrl: tokenBarScreenshot,
@@ -237,9 +245,33 @@ export const projectsData = [
     glow: "group-hover:shadow-amber-500/20",
   },
   {
+    title: "Pocket Agent",
+    description:
+      "Open-source local AI assistant ecosystem — Python Pocket Node runs LLM routing, tools, memory, and Telegram on your machine; a macOS desktop app bundles the stack; a Cloudflare Worker API and React web UI handle chat, monitor, and settings.",
+    tags: ["Python", "Cloudflare", "React", "macOS"],
+    imageUrl: pocketAgentImg,
+    screenshotUrl: pocketAgentScreenshot,
+    url: "https://pocket-agent.pages.dev/",
+    githubUrl: "https://github.com/pocket-agent",
+    accent: "from-sky-400/30 via-blue-500/20 to-indigo-400/20",
+    glow: "group-hover:shadow-sky-500/20",
+  },
+  {
+    title: "dropafile",
+    description:
+      "Drop a file. Everyone gets it live. Ephemeral, live-session file sharing on Cloudflare Workers — spin up a room, share a link or QR code, and let connected peers download in real time. WebSocket signaling on the edge; file bytes flow peer-to-peer in the browser.",
+    tags: ["Cloudflare", "Hono", "React", "TypeScript"],
+    imageUrl: dropafileImg,
+    screenshotUrl: dropafileScreenshot,
+    url: "https://dropafile.app-org-es.workers.dev/",
+    githubUrl: "https://github.com/dropafile/dropafile",
+    accent: "from-orange-400/30 via-amber-500/20 to-yellow-400/20",
+    glow: "group-hover:shadow-orange-500/20",
+  },
+  {
     title: "Email Signature Editor",
     description:
-      "Schema-driven email signature builder with live HTML preview and one-click copy into Gmail. Import from LinkedIn, customize in a visual editor, and manage a saved signature library.",
+      "Schema-driven email signature builder with a guided template flow, live HTML preview, and one-click copy into Gmail. Import your profile from LinkedIn to pre-fill fields, then customize in the visual template editor.",
     tags: ["React", "Vite", "Tailwind CSS", "shadcn/ui"],
     imageUrl: emailSignatureEditorImg,
     screenshotUrl: emailSignatureEditorScreenshot,
@@ -249,15 +281,15 @@ export const projectsData = [
     glow: "group-hover:shadow-violet-500/20",
   },
   {
-    title: "CarBnB",
+    title: "Lizard UI",
     description:
-      "Peer-to-peer car rental marketplace inspired by Airbnb. Two proof-of-concept frontends built with Lovable and Vercel v0 to compare AI-assisted UI generation workflows.",
-    tags: ["Next.js", "React", "Vercel", "Netlify"],
-    imageUrl: carbnbImg,
-    screenshotUrl: carbnbScreenshot,
-    url: "https://carbnb.netlify.app/",
-    githubUrl: "https://github.com/xarlizard/carbnb-v0",
-    accent: "from-emerald-400/30 via-teal-500/20 to-cyan-400/20",
+      "React component library with shadcn-style primitives and Tailwind-native glass styling — 23 runtime-swappable color themes, light/dark/system modes, and tree-shakeable ESM + CJS builds with full TypeScript declarations.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "npm"],
+    imageUrl: lizardUiImg,
+    screenshotUrl: lizardUiScreenshot,
+    url: "https://lizard-ui.pages.dev/",
+    githubUrl: "https://github.com/lizard-ui/lizard-ui",
+    accent: "from-emerald-400/30 via-teal-500/20 to-green-400/20",
     glow: "group-hover:shadow-emerald-500/20",
   },
 ] as const;

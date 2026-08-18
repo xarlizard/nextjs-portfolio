@@ -6,7 +6,7 @@ import { projectsData } from "@/lib/data";
 import Project from "./project";
 import { motion } from "framer-motion";
 
-const CYCLE_INTERVAL_MS = 4000;
+const CYCLE_INTERVAL_MS = 2000;
 
 export default function Projects() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -42,8 +42,8 @@ export default function Projects() {
         transition={{ duration: 0.45, delay: 0.05 }}
         className="-mt-4 mb-10 text-center text-gray-600 dark:text-white/60 sm:mb-12"
       >
-        A selection of products I&apos;ve designed, built, and shipped — from native
-        macOS apps to full-stack web platforms.
+        A selection of products and libraries I&apos;ve designed, built, and shipped — from
+        native macOS apps to npm packages and full-stack web platforms.
       </motion.p>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
