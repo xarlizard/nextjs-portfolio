@@ -6,6 +6,10 @@ export const tokenBarImg =
   "https://raw.githubusercontent.com/token-bar/token-bar/main/.github/icon-cropped.png";
 export const tokenBarScreenshot =
   "https://raw.githubusercontent.com/token-bar/token-bar/main/.github/screenshot.png";
+export const cookGptImg =
+  "https://raw.githubusercontent.com/cook-gpt/cook-gpt/main/.github/icon-cropped.png";
+export const cookGptScreenshot =
+  "https://raw.githubusercontent.com/cook-gpt/cook-gpt/main/.github/screenshot.png";
 export const pocketAgentImg =
   "https://raw.githubusercontent.com/pocket-agent/pocket-agent/main/.github/icon-cropped.png";
 export const pocketAgentScreenshot =
@@ -232,6 +236,18 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "CookGPT",
+    description:
+      "Open-source native SwiftUI app — browse and edit recipes, plan meals by day or week, generate grocery lists from your schedule, and run step timers with Live Activities on the Lock Screen and Dynamic Island. Your recipes, meal plans, and shopping lists stay on device.",
+    tags: ["Swift", "SwiftUI", "iOS", "iPadOS"],
+    imageUrl: cookGptImg,
+    screenshotUrl: cookGptScreenshot,
+    url: "https://cook-gpt.pages.dev/",
+    githubUrl: "https://github.com/cook-gpt/cook-gpt",
+    accent: "from-red-400/30 via-orange-500/20 to-amber-400/20",
+    glow: "group-hover:shadow-red-500/20",
+  },
   {
     title: "Token Bar",
     description:
