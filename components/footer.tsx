@@ -1,29 +1,37 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { hostingProviders } from "@/lib/data"; // Import the hostingProviders array
+import React, { useState } from "react";
+import { hostingProviders } from "@/lib/data";
+
+function getHostingProvider() {
+  if (typeof window === "undefined") {
+    return "Github";
+  }
+
+  const hostname = window.location.hostname;
+
+  if (
+    hostname.includes("charlie.icu") ||
+    hostname.includes("pages.dev") ||
+    hostname.includes("workers.dev")
+  ) {
+    return "Cloudflare";
+  }
+
+  if (hostname.includes("netlify.app")) {
+    return "Netlify";
+  }
+
+  if (hostname.includes("vercel.app")) {
+    return "Vercel";
+  }
+
+  return "Github";
+}
 
 export default function Footer() {
-  const [hostingProvider, setHostingProvider] = useState("Github");
+  const [hostingProvider] = useState(getHostingProvider);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  useEffect(() => {
-    const hostname = window.location.hostname;
-
-    if (
-      hostname.includes("charlie.icu") ||
-      hostname.includes("pages.dev") ||
-      hostname.includes("workers.dev")
-    ) {
-      setHostingProvider("Cloudflare");
-    } else if (hostname.includes("netlify.app")) {
-      setHostingProvider("Netlify");
-    } else if (hostname.includes("vercel.app")) {
-      setHostingProvider("Vercel");
-    } else {
-      setHostingProvider("Github");
-    }
-  }, []);
 
   return (
     <footer className="mb-10 px-4 text-center text-gray-500 relative">
@@ -39,7 +47,6 @@ export default function Footer() {
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
         >
           {hostingProvider}
-          {/* Dropdown Menu */}
           {isDropdownOpen && (
             <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg z-10">
               <ul className="py-2">

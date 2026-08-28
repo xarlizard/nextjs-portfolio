@@ -1,9 +1,9 @@
-/** @type {import('next').NextConfig} */
+import type { NextConfig } from "next";
 import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   images: {
-    unoptimized: true, // Disable Next.js image optimization
+    unoptimized: true,
     qualities: [75, 95],
     remotePatterns: [
       {
@@ -20,5 +20,4 @@ const nextConfig = {
 
 export default nextConfig;
 
-// Initialize OpenNext for Cloudflare
 initOpenNextCloudflareForDev();

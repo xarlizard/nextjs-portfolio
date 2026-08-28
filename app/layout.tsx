@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "@/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -9,7 +10,7 @@ import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Charlie | Personal Portfolio",
   description: "Charlie is a full-stack developer with 6 years of experience.",
 };

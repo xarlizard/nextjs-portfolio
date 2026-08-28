@@ -46,7 +46,7 @@ export default function Contact() {
           setIsPending(true);
 
           const formData = new FormData(e.currentTarget);
-          const { data, error } = await sendEmail(formData);
+          const { error } = await sendEmail(formData);
 
           if (error) {
             toast.error(error);
