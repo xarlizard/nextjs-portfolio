@@ -237,10 +237,10 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CookGPT",
+    title: "CookGPT - Gourmet Plan & Taste",
     description:
-      "Open-source native SwiftUI app — browse and edit recipes, plan meals by day or week, generate grocery lists from your schedule, and run step timers with Live Activities on the Lock Screen and Dynamic Island. Your recipes, meal plans, and shopping lists stay on device.",
-    tags: ["Swift", "SwiftUI", "iOS", "iPadOS"],
+      "iPhone/iPad native SwiftUI app — browse and edit recipes, plan meals by day or week, generate grocery lists from your schedule, and run step timers with Live Activities on the Lock Screen and Dynamic Island. Your recipes, meal plans, and shopping lists stay on device.",
+    tags: ["Swift", "iOS", "iPadOS"],
     imageUrl: cookGptImg,
     screenshotUrl: cookGptScreenshot,
     url: "https://cook-gpt.pages.dev/",
@@ -330,12 +330,12 @@ export const skillsData = [
   "Python",
   "Shadcdn",
   "Framer Motion",
+  "Swift"
 ] as const;
 
 export const hostingProviders = [
   { name: "Cloudflare", logo: "/images/logo_cloudflare.png", link: "https://portfolio.app-org-es.workers.dev/" },
   { name: "Netlify", logo: "/images/logo_netlify.png", link: "https://europass.netlify.app/" },
-  { name: "Vercel", logo: "/images/logo_vercel.png", link: "https://vercel.com" },
   { name: "Github", logo: "/images/logo_github.png", link: "https://github.com/Xarlizard/xarlizard/tree/gh-pages" },
 ] as const;
 
